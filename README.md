@@ -1,12 +1,12 @@
-# mitm mocks
+# traffic-interceptor-proxy
 
-Simple mock API setup using `mitmproxy` + `mocks.json`.
+Simple traffic interceptor proxy using `mitmproxy` + config rules.
 
 ## Files
 
-- `mocks.json`: all mock rules
-- `mock_gui.py`: small UI to edit mocks
-- `dlp_in_mocks.py`: mitmproxy addon that serves mock responses
+- `mocks.json`: all interception rules
+- `mock_gui.py`: small UI to edit rules
+- `dlp_in_mocks.py`: mitmproxy addon that intercepts and returns configured responses
 - `mock_engine.py`: matching logic used by both
 
 ## Setup
@@ -34,5 +34,5 @@ mitmproxy -s dlp_in_mocks.py
 
 ## Notes
 
-- edit mocks in GUI or directly in `mocks.json`
+- edit rules in GUI or directly in `mocks.json`
 - changes in `mocks.json` are auto-reloaded
