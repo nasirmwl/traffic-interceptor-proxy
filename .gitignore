@@ -1,2 +1,3 @@
-# add venv
+# Python virtual environments
 venv/
+.venv/
